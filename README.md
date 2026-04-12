@@ -8,7 +8,7 @@ This project analyzes raw `.pcap` network traffic and performs **Layer 7 inspect
 ## 🎯 Project Overview
 
 Traditional firewalls rely on IPs and ports, which are often insufficient due to encryption and CDNs.
-This project goes deeper by analyzing the **actual packet payload (Layer 7)** to identify applications and enforce rules.
+This project goes deeper by analyzing the **actual packet payload (Layer 7)* to identify applications and enforce rules.
 
 ---
 
