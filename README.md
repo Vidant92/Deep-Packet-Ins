@@ -146,7 +146,7 @@ These datasets include HTTP and TLS traffic, ideal for testing SNI-based applica
 
 ## 👨‍💻 Author
 
-**Vidant Bharwaj**
+**Vidant Bhardwaj**
 
 * LinkedIn: https://www.linkedin.com/in/vidant-bhardwaj-b64970380/
 
