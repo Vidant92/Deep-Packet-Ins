@@ -1,30 +1,30 @@
-# 🚀 Java Deep Packet Inspection (DPI) Engine
+# Java Deep Packet Inspection (DPI) Engine
 
 A high-performance, multi-threaded **Deep Packet Inspection (DPI) Engine** built using **pure Java** (no external packet libraries).
 This project analyzes raw `.pcap` network traffic and performs **Layer 7 inspection** to detect real-world applications like YouTube, Instagram, Twitter, etc., and applies filtering rules.
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 Traditional firewalls rely on IPs and ports, which are often insufficient due to encryption and CDNs.
 This project goes deeper by analyzing the **actual packet payload (Layer 7)* to identify applications and enforce rules.
 
 ---
 
-## 🔥 Features
+##  Features
 
-* 📦 **PCAP File Parsing** – Reads raw `.pcap` files without third-party libraries
-* 🔍 **Layer 7 Inspection** – Extracts HTTP Host & TLS SNI
-* 🚫 **Application Blocking** – Block apps like YouTube, TikTok
-* ⚡ **Multi-threaded Processing** – High-performance packet handling
-* 🔄 **Load Balancing** – Distributes packets across worker threads
-* 📊 **Detailed Analytics** – Application breakdown, domain stats, packet metrics
-* 🔗 **Connection Tracking** – Based on Five-Tuple (IP, Port, Protocol)
+*  **PCAP File Parsing** – Reads raw `.pcap` files without third-party libraries
+*  **Layer 7 Inspection** – Extracts HTTP Host & TLS SNI
+*  **Application Blocking** – Block apps like YouTube, TikTok
+*  **Multi-threaded Processing** – High-performance packet handling
+*  **Load Balancing** – Distributes packets across worker threads
+* **Detailed Analytics** – Application breakdown, domain stats, packet metrics
+* **Connection Tracking** – Based on Five-Tuple (IP, Port, Protocol)
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 PCAP Reader → Load Balancer → FastPath Processors → DPI Engine → Output
@@ -40,7 +40,7 @@ PCAP Reader → Load Balancer → FastPath Processors → DPI Engine → Output
 
 ---
 
-## 🧠 Core Concepts Used
+##  Core Concepts Used
 
 * OSI Model & TCP/IP Stack
 * Ethernet, IPv4, TCP/UDP Parsing
@@ -51,7 +51,7 @@ PCAP Reader → Load Balancer → FastPath Processors → DPI Engine → Output
 
 ---
 
-## 📊 Sample Output
+##  Sample Output
 
 ```
 Total Packets: 77
@@ -72,7 +72,7 @@ Instagram     1
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### 1️⃣ Navigate to Project Folder
 
@@ -92,7 +92,7 @@ mvn clean package
 java -jar target\dpi-engine-1.0-SNAPSHOT-jar-with-dependencies.jar test_dpi.pcap output.pcap
 ```
 
-### 🔥 Block Specific App
+###  Block Specific App
 
 ```
 java -jar target\dpi-engine-1.0-SNAPSHOT-jar-with-dependencies.jar test_dpi.pcap output.pcap --block-app YouTube
@@ -100,14 +100,14 @@ java -jar target\dpi-engine-1.0-SNAPSHOT-jar-with-dependencies.jar test_dpi.pcap
 
 ---
 
-## 📁 Input & Output
+##  Input & Output
 
 * **Input:** `.pcap` file (network traffic capture)
 * **Output:** Filtered `.pcap` file + analytics report
 
 ---
 
-## 🔒 Dataset
+##  Dataset
 
 For testing, publicly available datasets were used:
 
@@ -127,14 +127,14 @@ These datasets include HTTP and TLS traffic, ideal for testing SNI-based applica
 
 ## 🚀 Future Enhancements
 
-* 🔥 Real-time packet sniffing
-* 📊 GUI dashboard (traffic visualization)
-* 🧠 Machine learning-based traffic classification
-* 🌐 Advanced TLS parsing
+*  Real-time packet sniffing
+*  GUI dashboard (traffic visualization)
+*  Machine learning-based traffic classification
+*  Advanced TLS parsing
 
 ---
 
-## 💼 Use Cases
+##  Use Cases
 
 * Network Monitoring
 * Enterprise Firewall Systems
@@ -144,7 +144,7 @@ These datasets include HTTP and TLS traffic, ideal for testing SNI-based applica
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Vidant Bhardwaj**
 
