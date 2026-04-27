@@ -93,7 +93,7 @@ public class PcapReader {
         }
     }
 
-    private int readIntNative(byte[] buf, int offset) {
+    private int readIntNative(byte[] buf, int offset) { // error removed in  this  shift operations 
         return ((buf[offset] & 0xFF) << 24) |
                ((buf[offset + 1] & 0xFF) << 16) |
                ((buf[offset + 2] & 0xFF) << 8) |
