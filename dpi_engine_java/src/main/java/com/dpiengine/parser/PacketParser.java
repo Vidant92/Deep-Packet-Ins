@@ -62,7 +62,7 @@ public class PacketParser {
                 dstPort = ((data[offset + 2] & 0xFF) << 8) | (data[offset + 3] & 0xFF);
                 offset += 8;
             } else {
-                return false; // Not TCP or UDP
+                return false; // Not TCP or UDP in this case 
             }
 
             job.payloadOffset = offset;
