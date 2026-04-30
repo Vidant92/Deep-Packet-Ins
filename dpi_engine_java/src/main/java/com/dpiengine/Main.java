@@ -51,7 +51,7 @@ public class Main {
         for (String app : blockApps) engine.blockApp(app);
         for (String dom : blockDomains) engine.blockDomain(dom);
 
-        if (!engine.process(input, output)) {
+        if (!engine.process(input, output)) { // yeh h new addition 
             System.exit(1);
         }
 
