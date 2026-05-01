@@ -199,7 +199,7 @@ public class DpiEngine {
         return true;
     }
 
-    private String printReport() {
+    private String printReport() { //updated
         StringBuilder b = new StringBuilder();
         b.append("\n==============================================================\n");
         b.append("                     PROCESSING REPORT                        \n");
