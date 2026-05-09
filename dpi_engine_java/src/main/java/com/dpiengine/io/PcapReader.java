@@ -53,7 +53,7 @@ public class PcapReader {
             try {
                 file.close();
             } catch (IOException e) {
-                // Ignore
+                // Ignore this
             }
             file = null;
         }
