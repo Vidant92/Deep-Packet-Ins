@@ -72,33 +72,6 @@ Instagram     1
 
 ---
 
-##  How to Run
-
-### 1️⃣ Navigate to Project Folder
-
-```
-cd C:\Users\PC\Desktop\Packet_analyzer\dpi_engine_java
-```
-
-### 2️⃣ Build the Project
-
-```
-mvn clean package
-```
-
-### 3️⃣ Run the Engine
-
-```
-java -jar target\dpi-engine-1.0-SNAPSHOT-jar-with-dependencies.jar test_dpi.pcap output.pcap
-```
-
-###  Block Specific App
-
-```
-java -jar target\dpi-engine-1.0-SNAPSHOT-jar-with-dependencies.jar test_dpi.pcap output.pcap --block-app YouTube
-```
-
----
 
 ##  Input & Output
 
@@ -117,22 +90,6 @@ These datasets include HTTP and TLS traffic, ideal for testing SNI-based applica
 
 ---
 
-## ⚠️ Limitations
-
-* Cannot inspect fully encrypted payloads (HTTPS beyond handshake)
-* Limited support for QUIC / HTTP3
-* Works on offline PCAP files (not real-time yet)
-
----
-
-## 🚀 Future Enhancements
-
-*  Real-time packet sniffing
-*  GUI dashboard (traffic visualization)
-*  Machine learning-based traffic classification
-*  Advanced TLS parsing
-
----
 
 ##  Use Cases
 
@@ -151,12 +108,6 @@ These datasets include HTTP and TLS traffic, ideal for testing SNI-based applica
 * LinkedIn: https://www.linkedin.com/in/vidant-bhardwaj-b64970380/
 
 ---
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub!
-
-Happy learning! 🚀
 
 ## SCREENSHOTS FOR BETTER UNDERSTANDING 
 <img width="1920" height="1080" alt="Screenshot (460)" src="https://github.com/user-attachments/assets/60172de3-c51e-4378-8a96-7189eb5daa61" />
